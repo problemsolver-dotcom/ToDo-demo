@@ -43,7 +43,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for todo in allTodo %}
+                    {% for todo in allTodo if todo.user_id == session['user_id'] %}
+
                     <tr>
                         <th scope="row">{{loop.index}}</th>
                         <td>{{todo.title}}</td>
