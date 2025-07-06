@@ -1,0 +1,116 @@
+/* General Reset & Base Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40 !important;
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Headings */
+h2 {
+    color: #343a40;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Forms */
+.form-label {
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #343a40;
+    box-shadow: none;
+}
+
+/* Buttons */
+.btn-dark.btn-outline-light {
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark.btn-outline-light:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+.btn-outline-dark {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Table */
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+    background-color: #343a40;
+    color: white;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+/* Alert */
+.alert-secondary {
+    font-size: 1.1rem;
+}
+
+/* Responsive container tweaks */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 56px); /* subtract navbar height */
+    background-color: #f8f9fa; /* optional, light background */
+}
+
+.about-card {
+    max-width: 500px;
+    width: 100%;
+}
